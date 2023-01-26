@@ -1,0 +1,10 @@
+video{
+    border-radius: 5px;
+    border: solid 1px rgba(14, 225, 248, 0.8);
+    width: 100%;
+    height: auto;
+}
+
+h4{
+    margin: 10px;
+}
