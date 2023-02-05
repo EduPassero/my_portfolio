@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "C#",
+        "description": "É a linguagem que mais utilizo no meu dia a dia, gosto do fato de ser tipada, evita confusões.",
+        "image": "csharp.svg"
+    },
+    {
+        "id": 2,
+        "name": "Linq",
+        "description": "É uma mistura de C# com SQL e me ajuda bastante no back-end.",
+        "image": "sql.svg"
+    },
+    {
+        "id": 3,
+        "name": "Blazor",
+        "description": "Framework web do C#, uso bastante no meu dia a dia. Acho parecido com o React pois permite componentizar quase tudo!",
+        "image": "blazor.svg"
+    },
+    {
+        "id": 4,
+        "name": "Requisições Http",
+        "description": "Uso muito em meu dia a dia. Apesar de não saber tudo o que acontece nas entranhas do back-end, consigo fazer ",
+        "image": ""
+    },
+    {
+        "id": 5,
+        "name": "SQL",
+        "description": "Utilizo bastante para pesquisas, geralmente para verificar possíveis problemas relatados pelos usuários.",
+        "image": "sql.svg"
+    },
+    {
+        "id": 6,
+        "name": "CSS",
+        "description": "Aprendi o básico na faculdade e a cada dia aprendo algo novo no CSS. Uso o mínimo possível de frameworks para aprender mais do CSS vanilla.",
+        "image": "css.svg"
+    },
+    {
+        "id": 7,
+        "name": "Bootstrap",
+        "description": "Eu era viciado nesse framework e até hoje uso no trabalho. Mas comecei a ver algumas limitações nele e hoje estou preferindo o CSS vanilla.",
+        "image": "bootstrap.svg"
+    },
+    {
+        "id": 8,
+        "name": "JavaScript",
+        "description": "Uso pouco no trabalho mas estudo para meus projetos pessoais em React.",
+        "image": "javascript.svg"
+    }
+]

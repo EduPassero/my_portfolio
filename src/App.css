@@ -8,40 +8,65 @@ body{
   width: 100%;
   height: 100vh;
   background-color: rgba(2, 37, 41);
-  
 }
-
-@font-face {
-  font-family: RobotoMedium;
-  src: url('/src/assets/fonts/RobotoSlab/RobotoSlab-Regular.ttf');
-}
-@font-face {
-  font-family: RubikMedium;
-  src: url('/src/assets/fonts/Rubik.ttf');
-}
-
 a{
   text-decoration: none;
   color: white;
 }
-h1, h2, h3{
+h1 {
   font-family: RobotoMedium;
   color:white;
 }
-h4, h5, p{
+h2, h3, h4{
+  font-family: Barlow;
+  color:white;
+}
+h5, p{
   font-family: Rubik;
   color: white;
 }
 nav{
   width: 100%;
-  background-color: rgba(2, 37, 41);
+  background-color: rgba(2, 37, 41, 0);
   position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 5%;
   transition: 500ms;
+  z-index: 2;
 }
+.crome{background-color: green;}
+.croma{background-color: blue;}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+[class*="col-"]{
+  float: left;
+}
+
+@font-face {
+  font-family: Barlow;
+  src: url('/src/assets/fonts/Sanchez/Sanchez-Regular.ttf');
+}
+@font-face {
+  font-family: Rubik;
+  src: url('/src/assets/fonts/Rubik/Rubik-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: RobotoMedium;
+  src: url('/src/assets/fonts/Pridi/Pridi-Regular.ttf');
+}
+
 .nav_active{
   transition: 500ms;
   background-color: rgba(14, 52, 62, 0.8);
@@ -49,27 +74,8 @@ nav{
   box-shadow: 0 0 10px rgb(5, 19, 24);
 }
 
-.social_button{
-  font-family: Rubik;
-  background-color: transparent;
-  color: white;
-  margin: 10px;
-  padding: 15px;
-  border-radius: 5px;
-  border: 1px solid white;
-  transition: 300ms;
-}
-.social_button:hover{
-  color: rgb(89, 219, 213);
-  border: 1px solid rgb(89, 219, 213);
-  
-  transition: 300ms;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgb(83, 251, 245), inset 0 0 10px rgb(83, 251, 245);
-}
-
 .nav_links li{
-  font-family: RubikMedium;
+  font-family: Rubik;
   list-style: none;
   display: inline-block;
   padding: 0px 20px;
@@ -82,6 +88,7 @@ nav{
 .nav_mobile{
   transition: width 300ms ease;
   width: 0;
+  z-index: 3;
 }
 .nav_mobile_active{
   display: block;
@@ -114,7 +121,7 @@ nav{
   transition: 500ms;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 800px){
   .nav_mobile_button{
     background-color: rgba(255, 255, 255, 0);
     display: block;
@@ -134,58 +141,105 @@ nav{
     width: 100%;
     margin-top: 8em;
     height: 150px;
-    font-family: RubikMedium;
+    font-family: Rubik;
     line-height: 50px;
     display: block;
   }
-}
 
+  [class*="col-"]{
+    width: 100%;
+  }
+
+}
+.video_bg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
 .cover{
-  padding: 6em 5% 0 5%;
+  padding: 5em 0 0 0;
   width: 100%;
   min-height: 650px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 .big_titles{
-  padding: 6em 0 3em 0;
+  align-items: center;
+  margin: 6em auto 2em auto;
+  width: 90%;
 }
 .big_titles h1{
-  font-size: clamp(2.7em, 1em + 3vw, 5em);
+  font-size: clamp(2em, 1.9em + 3vw, 6em);
 }
 .big_titles h2{
+  font-family: RobotoMedium;
   font-size: 2em;
   font-size: clamp(1.5em, 1em + 2vw, 3em);
 }
-
-.lists{
-  padding-left: 1em;
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.row{
+  display: inline;
 }
-.tech_list{
-  list-style-type: circle;
-  font-family: 'Rubik';
+.row::after{
+  display: flex;
+  content: "";
+  clear: both;
+  display: table;
+}
+.social_buttons{
+  align-items: center;
+  width: 90%;
+  margin: 2em auto;
+  padding: 10px;
+}
+.social_button{
+  font-family: Rubik;
+  background-color: transparent;
   color: white;
+  margin-right: 10px;
+  padding: 0.8em 0;
+  width: 7em;
+  border-radius: 100px;
+  border: 1px solid white;
+  transition: 300ms;
+}
+.social_button:hover{
+  color: rgb(89, 219, 213);
+  border: 1px solid rgb(89, 219, 213);
+  
+  transition: 300ms;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(83, 251, 245), inset 0 0 10px rgb(83, 251, 245);
+}
+
+.skills{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 35px;
+  justify-content: center;
 }
 
 .container{
-  display: flex;
-  flex-direction: row;
   background-position: fixed;
-}
-.padding{
-  padding: 5% 15%;
-  width: 100%;
+  width: 80%;
+  align-items: center;
+  margin: 10em auto;
 }
 
 .cards{
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
 }
 
-.videos{
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.about{
+  padding: 1vh 1em;
+  text-align: justify;
+}
+
+.title{
+  padding: 1em 0;
 }

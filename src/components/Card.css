@@ -1,22 +1,35 @@
 .card{
-    background-color: rgb(2, 60, 66);
-    border: 1px solid rgba(14, 225, 248, 0.8);
+    /* background-color: rgb(2, 60, 66); */
+    border: 3px solid rgb(18, 106, 116);
     text-align: center;
-    border-radius: 5px;
-    height: 300px;
+    border-radius: 15px;
+    height: 400px;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    z-index: 8;
+    transition: 0.5s ease;
 }
 
-.card h2{
+.card h3{
     padding: 1em 0;
 }
 
 .card p{
-    padding: 1em 2em;
+    padding: 0 2em;
     text-align: justify;
 }
 
+.project_image{
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 1em;
+    z-index: -1;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
 .card:hover{
-    border: 1px solid rgb(0, 255, 251);
+    border: 3px solid rgb(0, 255, 251);
     cursor: pointer;
     box-shadow: 0 0 10px rgb(83, 251, 245), inset 0 0 10px rgb(83, 251, 245);
 }

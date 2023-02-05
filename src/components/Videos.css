@@ -1,0 +1,17 @@
+.video_project{
+    border-radius: 5px;
+    border: solid 2px rgb(18, 106, 116);
+    width: 100%;
+    height: auto;
+}
+
+.video_wrapper h3{
+    margin: 10px;
+}
+
+.videos{
+    padding: 2em 0;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}

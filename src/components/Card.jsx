@@ -1,14 +1,16 @@
 import './Card.css';
 
-function Card({Id, Name, Img,  Description, link}) {
+function Card({Id, Name, Img,  Description, Link}) {
     return (
-        <div className='card' id={Id}>
-            <div className='card_header'>
-                <h2>{Name}</h2>
+        <a href={Link} target="_blank">
+            <div className='card' id={Id}>
+            <img className='project_image' src={`${import.meta.env.VITE_PROJECT_URL + Img}`}/>
+                    <h3>{Name}</h3>
+                
+                <p>{Description}</p>
+                
             </div>
-            <img src={Img}/>
-            <p>{Description}</p>
-        </div>
+        </a>
     )
 }
 
