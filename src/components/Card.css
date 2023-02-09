@@ -1,9 +1,7 @@
 .card{
-    /* background-color: rgb(2, 60, 66); */
     border: 3px solid rgb(18, 106, 116);
     text-align: center;
     border-radius: 15px;
-    height: 400px;
     width: 100%;
     flex-direction: column;
     display: flex;
@@ -16,20 +14,22 @@
 }
 
 .card p{
-    padding: 0 2em;
+    padding: 0 2em 3em 2em;
     text-align: justify;
 }
 
 .project_image{
-    max-width: 100%;
-    position: relative;
-    margin-bottom: 1em;
+    filter: contrast(60%);
     z-index: -1;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
+    transition: 0.5s ease;
 }
 .card:hover{
-    border: 3px solid rgb(0, 255, 251);
+    border: 3px solid #00FFFB;
     cursor: pointer;
-    box-shadow: 0 0 10px rgb(83, 251, 245), inset 0 0 10px rgb(83, 251, 245);
+    box-shadow: 0 0 10px #00FFFB, inset 0 0 10px #00F5F1;
+}
+.card:hover .project_image{
+    filter: contrast(100%);
 }

@@ -19,11 +19,11 @@ h1 {
 }
 h2, h3, h4{
   font-family: Barlow;
-  color:white;
+  color: #EDFCFC;
 }
 h5, p{
   font-family: Rubik;
-  color: white;
+  color: #EDFCFC;
 }
 nav{
   width: 100%;
@@ -56,11 +56,11 @@ nav{
 
 @font-face {
   font-family: Barlow;
-  src: url('/src/assets/fonts/Sanchez/Sanchez-Regular.ttf');
+  src: url('/src/assets/fonts/Free-Sans/FreeSansBold.otf');
 }
 @font-face {
   font-family: Rubik;
-  src: url('/src/assets/fonts/Rubik/Rubik-VariableFont_wght.ttf');
+  src: url('/src/assets/fonts/Roboto/Roboto-Regular.ttf');
 }
 @font-face {
   font-family: RobotoMedium;
@@ -82,7 +82,7 @@ nav{
 }
 .nav_links li a:hover{
   transition: all 0.5s ease 0s;
-  color: rgb(64, 255, 245);
+  color: #5CE9FF;
 }
 
 .nav_mobile{
@@ -99,7 +99,7 @@ nav{
   display: none;
 }
 .nav_mobile_links li a:hover{
-  color:rgb(64, 255, 245)
+  color: #5CE9FF;
 }
 
 .nav_mobile_button{
@@ -174,11 +174,13 @@ nav{
 }
 .big_titles h1{
   font-size: clamp(2em, 1.9em + 3vw, 6em);
+  letter-spacing: 5px;
 }
 .big_titles h2{
   font-family: RobotoMedium;
   font-size: 2em;
   font-size: clamp(1.5em, 1em + 2vw, 3em);
+  letter-spacing: 3px;
 }
 .row{
   display: inline;
@@ -231,8 +233,8 @@ nav{
 
 .cards{
   display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
 }
 
 .about{
@@ -242,4 +244,10 @@ nav{
 
 .title{
   padding: 1em 0;
+}
+
+.footer{
+  bottom: 0;
+  background-color: #0A4744;
+  height: 20em ;
 }
