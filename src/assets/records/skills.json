@@ -18,12 +18,6 @@
         "image": "blazor.svg"
     },
     {
-        "id": 4,
-        "name": "Requisições Http",
-        "description": "Uso muito em meu dia a dia. Apesar de não saber tudo o que acontece nas entranhas do back-end, consigo fazer ",
-        "image": ""
-    },
-    {
         "id": 5,
         "name": "SQL",
         "description": "Utilizo bastante para pesquisas, geralmente para verificar possíveis problemas relatados pelos usuários.",

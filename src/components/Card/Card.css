@@ -1,0 +1,49 @@
+.card{
+    border: 3px solid rgb(18, 106, 116);
+    text-align: center;
+    border-radius: 15px;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    z-index: 7;
+    transition: 0.5s ease;
+    position: relative;
+}
+
+.card h3{
+    display: none;
+    position: absolute;
+    padding: 12vh 10vw;
+    color: #00FFFB;
+    transition: 0.5s ease;
+}
+
+.card p{
+    display: none;
+    padding: 16vh 10vw;
+    text-align: left;
+    position: absolute;
+    color: #00FFFB;
+    transition: 0.5s ease;
+}
+
+.project_image{
+    z-index: -99;
+    border-radius: 12px;
+    transition: 0.5s ease;
+}
+.card:hover{
+    border: 3px solid #00FFFB;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00FFFB, inset 0 0 10px #00F5F1;
+}
+.card:hover .project_image{
+    filter: contrast(15%) blur(3px);
+}
+.card:hover h3{
+    display: block;
+}
+
+.card:hover p{
+    display: block;
+}

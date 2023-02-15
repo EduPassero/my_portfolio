@@ -14,16 +14,18 @@ a{
   color: white;
 }
 h1 {
-  font-family: RobotoMedium;
+  font-family: Pridi;
   color:white;
 }
-h2, h3, h4{
-  font-family: Barlow;
+h3, h4{
+  font-family: PoppinsSemiBold;
   color: #EDFCFC;
 }
 h5, p{
   font-family: Rubik;
   color: #EDFCFC;
+  text-align: left;
+  line-height: 1.5em;
 }
 nav{
   width: 100%;
@@ -55,15 +57,19 @@ nav{
 }
 
 @font-face {
-  font-family: Barlow;
-  src: url('/src/assets/fonts/Free-Sans/FreeSansBold.otf');
+  font-family: Poppins;
+  src: url('/src/assets/fonts/Poppins/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: PoppinsSemiBold;
+  src: url('/src/assets/fonts/Poppins/Poppins-SemiBold.ttf');
 }
 @font-face {
   font-family: Rubik;
-  src: url('/src/assets/fonts/Roboto/Roboto-Regular.ttf');
+  src: url('/src/assets/fonts/Rubik/static/Rubik-Light.ttf');
 }
 @font-face {
-  font-family: RobotoMedium;
+  font-family: Pridi;
   src: url('/src/assets/fonts/Pridi/Pridi-Regular.ttf');
 }
 
@@ -72,8 +78,8 @@ nav{
   background-color: rgba(14, 52, 62, 0.8);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 10px rgb(5, 19, 24);
+  z-index: 9;
 }
-
 .nav_links li{
   font-family: Rubik;
   list-style: none;
@@ -84,7 +90,6 @@ nav{
   transition: all 0.5s ease 0s;
   color: #5CE9FF;
 }
-
 .nav_mobile{
   transition: width 300ms ease;
   width: 0;
@@ -101,7 +106,6 @@ nav{
 .nav_mobile_links li a:hover{
   color: #5CE9FF;
 }
-
 .nav_mobile_button{
   display: none;
   border-radius: 50%;
@@ -119,6 +123,34 @@ nav{
 .nav_mobile_button:hover{
   cursor: pointer;
   transition: 500ms;
+}
+.brand{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: solid 2px #5CE9FF;
+  margin-bottom: 1em;
+}
+.nav_brand{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: solid 2px #5CE9FF;
+  position: absolute;
+}
+.brand_cover{
+  border-radius: 50%;
+  background-color: #048da283;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  z-index: 99;
+  transition: 300ms ease;
+}
+.brand_cover:hover{
+  filter: contrast(120%);
+  box-shadow: 0 0 10px #00FFFB, inset 0 0 10px #00F5F1;
+  background-color: #00566300;
 }
 
 @media screen and (max-width: 800px){
@@ -150,7 +182,21 @@ nav{
     width: 100%;
   }
 
+  .sm-2{width: 16.66%;}
+  .sm-9{width: 75%;}
 }
+.title{
+  font-family: PoppinsSemiBold;
+  color: #EDFCFC;
+  padding: 0.5em 0;
+}
+.container{
+  background-position: fixed;
+  width: 80%;
+  align-items: center;
+  margin: 15em auto 0 auto;
+}
+
 .video_bg{
   position: absolute;
   top: 0;
@@ -162,7 +208,7 @@ nav{
 .cover{
   padding: 5em 0 0 0;
   width: 100%;
-  min-height: 650px;
+  min-height: 850px;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -172,15 +218,18 @@ nav{
   margin: 6em auto 2em auto;
   width: 90%;
 }
-.big_titles h1{
+.big_titles #name{
   font-size: clamp(2em, 1.9em + 3vw, 6em);
-  letter-spacing: 5px;
+  letter-spacing: 1px;
+  font-family: Pridi;
+  color:white;
 }
-.big_titles h2{
-  font-family: RobotoMedium;
+.big_titles #subtitle{
+  color: #EDFCFC;
+  font-family: Poppins;
   font-size: 2em;
   font-size: clamp(1.5em, 1em + 2vw, 3em);
-  letter-spacing: 3px;
+  font-weight: 200;
 }
 .row{
   display: inline;
@@ -218,36 +267,49 @@ nav{
 }
 
 .skills{
+  margin-top: 1em;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 35px;
   justify-content: center;
 }
-
-.container{
-  background-position: fixed;
-  width: 80%;
-  align-items: center;
-  margin: 10em auto;
-}
-
 .cards{
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
 }
 
-.about{
-  padding: 1vh 1em;
-  text-align: justify;
-}
-
-.title{
-  padding: 1em 0;
-}
-
 .footer{
   bottom: 0;
-  background-color: #0A4744;
-  height: 20em ;
+  background-color: #005663;
+  height: 50vh;
+  width: 100%;
+  display: grid;
+  margin-top: 15em;
+}
+.brand_footer{
+  margin: auto auto;
+  text-align: center;
+}
+.brand_footer h5{
+  margin: 3em 0;
+}
+.name{
+  margin-top: 0.4em;
+  text-align: left;
+}
+.glow {
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    border: solid 6px #5CE9FF;
+    box-shadow: 0 0 10px #00FFFB, 0 0 20px #00FFFB, 0 0 30px #0cb9b6, 0 0 40px #0cb9b6;
+  }
+  
+  to {
+    border: solid 6px #c1f5ff;
+    box-shadow: 0 0 20px #00FFFB, 0 0 30px #00FFFB, 0 0 40px #1efaf6, 0 0 50px #1efaf6;
+  }
 }
