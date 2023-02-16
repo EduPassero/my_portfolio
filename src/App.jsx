@@ -102,10 +102,15 @@ function App() {
 
       <div className='container' id="experiences">
       <h2 className='title'>Experiências</h2>
+      <div className="row">
+        <div className="col-7">
         <p>
           Trabalho há 4 anos na Consensu Soluções em Sistemas. Lá aprendi quase tudo o que sei hoje trabalhando em diversos projetos, abaixo está uma pequena demonstração
-          do meu principal projeto na empresa hoje: o desenvolvimento do Gestão Central Web, a versão web do nosso ERP.
+          do meu principal projeto na empresa hoje: o desenvolvimento do Gestão Central Web, a versão web do nosso sistema ERP.
         </p>
+        </div>
+      </div>
+        
           <Videos/>
         <div className="row">
           <div className="col-6">
@@ -113,9 +118,7 @@ function App() {
               Trabalho tanto no front-end quanto no back-end para concluir minhas tarefas. Sempre que surgem dúvidas peço ajuda aos meus gestores, ou vasculho a internet em busca de soluções.
               Sempre dou um jeito!
               <br/><br/>
-              Como atuo no suporte ao cliente e no desenvolvimento, minhas atividades são variadas: tiro dúvidas relacionadas
-              a notas fiscais, funções do sistema, treino novos usuários, crio logos, sites, artes para divulgação, configuração de e-mails...quase um canivete suíço!
-              Mas meu foco profissional é ser desenvolvedor, e é essa a função que venho exercendo cada vez mais ao longo do meu tempo na empresa.
+              Atualmente estou familiarizado com as tecnologias ao lado, são elas que utilizo no trabalho. Meu principal objeto de estudo  no momento é o React JS.
             </p>
           </div>
           <div className="col-6">
@@ -167,7 +170,9 @@ function App() {
               <h3>Eduardo<br/>Passero</h3>
             </div>
           </div>
+          <h5>Versão 1.0</h5>
         </div>
+        
       </div>
     </div>
   )

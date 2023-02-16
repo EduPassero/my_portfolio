@@ -1,13 +1,14 @@
 .skill {
     color: #ffffff;
-    width: 100px;
+    width: 120px;
+    margin-left: 2em;
 }
 
 .skill img {
     height: 1.8em;
 }
 .skill h5 {
-    padding-top: 0.5em;
+    padding: 0.5em 0 0 0.5em;
     color: #ffffff;
     font-family: PoppinsSemiBold;
 }
