@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 
 import eduardo from './assets/img/eduardo.png';
+import me_brand from './assets/img/me_brand.png';
 import close from './assets/icons/close.svg'
 import sandwich from './assets/icons/sandwich.svg'
 import bg from './assets/video/background_smoke.mp4'
@@ -43,7 +44,7 @@ function App() {
     <div className="App">
       <nav className={navbar ? 'nav_active' : ''}>
         <div className='brand_cover'></div>
-        <img className='nav_brand' src={eduardo}/>
+        <img className='nav_brand' src={me_brand}/>
         <ul className='nav_links'>
           <li><a href='#about'>Sobre</a></li>
           <li><a href='#experiences'>Experiências</a></li>
@@ -72,9 +73,9 @@ function App() {
           <div id="subtitle">&lt;desenvolvedor_web/&gt;</div>
         </div>
         <div className='social_buttons'>
-          <button className='social_button' href="https://www.linkedin.com/in/eduardo-passero/">LinkedIn</button>
-          <button className='social_button' href="https://github.com/EduPassero">Github</button>
-          <button className='social_button' href="https://wa.me/5547988475547">Whatsapp</button>
+          <a href="https://www.linkedin.com/in/eduardo-passero/"><button className='social_button'>LinkedIn</button></a>
+          <a href="https://github.com/EduPassero"><button className='social_button'>Github</button></a>
+          <a href="https://wa.me/5547988475547"><button className='social_button'>Whatsapp</button></a>
         </div>
       </div>
 
