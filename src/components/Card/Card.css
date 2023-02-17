@@ -1,8 +1,8 @@
 .card{
     border: 3px solid rgb(18, 106, 116);
-    text-align: center;
     border-radius: 15px;
     flex-direction: column;
+    margin: 1em 1em;
     display: flex;
     z-index: 7;
     transition: 0.5s ease;
@@ -11,7 +11,7 @@
 
 .card_content{
     display: none;
-    margin: 3em 3em;
+    margin: 2vw 3em;
     transition: 0.5s ease;
     text-align: left;
     position: absolute;
@@ -23,6 +23,15 @@
     border-radius: 12px;
     transition: 0.5s ease;
 }
+
+.card_content h3{
+    font-size: clamp(1em, 1em + 1vw, 3em);
+}
+
+.card_content p{
+    font-size: clamp(0.8em, 0.3em + 1vw, 1.2em);
+}
+
 .card:hover{
     border: 3px solid #00FFFB;
     cursor: pointer;

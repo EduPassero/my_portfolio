@@ -40,5 +40,12 @@
         "name": "JavaScript",
         "description": "Uso pouco no trabalho mas estudo para meus projetos pessoais em React.",
         "image": "javascript.svg"
+    },
+    {
+        "id": 9,
+        "name": "React",
+        "description": "É o principal alvo de meus estudos, e gostaria de trabalhar com ele",
+        "image": "react.svg"
     }
+
 ]

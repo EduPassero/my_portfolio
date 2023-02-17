@@ -73,9 +73,9 @@ function App() {
           <div id="subtitle">&lt;desenvolvedor_web/&gt;</div>
         </div>
         <div className='social_buttons'>
-          <a href="https://www.linkedin.com/in/eduardo-passero/"><button className='social_button'>LinkedIn</button></a>
-          <a href="https://github.com/EduPassero"><button className='social_button'>Github</button></a>
-          <a href="https://wa.me/5547988475547"><button className='social_button'>Whatsapp</button></a>
+          <a href="https://www.linkedin.com/in/eduardo-passero/" target='_blank'><button className='social_button'>LinkedIn</button></a>
+          <a href="https://github.com/EduPassero"><button className='social_button' target='_blank'>Github</button></a>
+          <a href="https://wa.me/5547988475547"><button className='social_button' target='_blank'>Whatsapp</button></a>
         </div>
       </div>
 
@@ -143,6 +143,7 @@ function App() {
       <div className='container' id='projects'>
       <h2 className='title'>Meus Projetos</h2>
           <div className='cards'>
+            <div class="row">
             {projects.map(project => {
               return (
                 <Card 
@@ -154,25 +155,27 @@ function App() {
                 />
               )
             })}
+            </div>
           </div>
       </div>
 
       <div className='footer'>
-        <div className='brand_footer'>
-        <h5>Forjado em 2023 no fogo do verão jaraguaense por:</h5>
-          <div className='row'>
-              <div className='col-5'>
-                <a href='https://www.youtube.com/shorts/PAOl8MgiDIQ'>
-                  <img className='brand glow' src={eduardo} />
-                </a>
-              </div>
-            <div className='col-7 name'>
-              <h3>Eduardo<br/>Passero</h3>
-            </div>
+        <div className='credits'>
+          <h5>Forjado em 2023 no fogo do verão jaraguaense por:</h5>
+        </div>
+        <div className='brand_name'>
+          <div className='brand_image'>
+            <a href='https://www.youtube.com/shorts/PAOl8MgiDIQ'>
+              <img className='glow' src={eduardo} />
+            </a>
           </div>
+          <div className='name'>
+            <h3>Eduardo<br />Passero</h3>
+          </div>
+        </div>
+        <div className='version'>
           <h5>Versão 1.0</h5>
         </div>
-        
       </div>
     </div>
   )
