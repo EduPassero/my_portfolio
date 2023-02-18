@@ -206,6 +206,7 @@ nav{
   width: 80%;
   align-items: center;
   margin: 20vw auto 0 auto;
+  scroll-margin-top: 100px;
 }
 
 .video_bg{

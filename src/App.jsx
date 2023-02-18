@@ -49,6 +49,7 @@ function App() {
           <li><a href='#about'>Sobre</a></li>
           <li><a href='#experiences'>Experiências</a></li>
           <li><a href='#projects'>Projetos</a></li>
+          <li><a href={`${import.meta.env.VITE_CURRICULO_URL}`}>Currículo</a></li>
         </ul>
         <button className='nav_mobile_button' onClick={showNavMobile}>
           <img src={sandwich} alt="sandwich"/>
@@ -143,7 +144,7 @@ function App() {
       <div className='container' id='projects'>
       <h2 className='title'>Meus Projetos</h2>
           <div className='cards'>
-            <div class="row">
+            <div className="row">
             {projects.map(project => {
               return (
                 <Card 
