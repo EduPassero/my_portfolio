@@ -17,7 +17,7 @@
         "id": 3,
         "nome": "Calculadora",
         "descricao": "Uma calculadora similar ao modelo da Apple, só que muito mais barata!",
-        "link": "",
+        "link": "https://edupassero.github.io/ep_calculator/",
         "image": "calculator.png"
     },
     {
